@@ -1,0 +1,11 @@
+# Netlify-Konfiguration – Heimat Social Club e.V.
+# Statische Seite, kein Build-Schritt nötig.
+
+[build]
+  publish = "."
+
+# Freundliche 404-Weiterleitung zur Startseite (optional)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404

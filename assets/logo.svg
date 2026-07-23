@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 110" width="470" height="110" role="img" aria-label="Heimat Social Club e.V.">
+  <g transform="translate(5,5)">
+    <circle cx="50" cy="50" r="47" fill="#f6f0e2" stroke="#2f5233" stroke-width="2.5"/>
+    <circle cx="50" cy="50" r="41" fill="none" stroke="#8a6d4b" stroke-width="1" stroke-dasharray="1.5 3"/>
+    <path d="M26 44 L50 25 L74 44" fill="none" stroke="#8a6d4b" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M50 70 L50 49" fill="none" stroke="#3a5a40" stroke-width="3" stroke-linecap="round"/>
+    <path d="M50 63 C40 60 34 52 36.5 43 C45 47 50.5 54 50 63 Z" fill="#5a8a4f"/>
+    <path d="M50 63 C60 60 66 52 63.5 43 C55 47 49.5 54 50 63 Z" fill="#6a994e"/>
+    <path d="M50 55 C46.5 49 46.5 43 50 38 C53.5 43 53.5 49 50 55 Z" fill="#4a7a44"/>
+    <path d="M34 72 Q50 76 66 72" fill="none" stroke="#8a6d4b" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(118,0)">
+    <text x="0" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700" fill="#2f5233" letter-spacing="0.5">Heimat</text>
+    <text x="2" y="80" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#8a6d4b" letter-spacing="3.5">SOCIAL CLUB e.V.</text>
+  </g>
+</svg>

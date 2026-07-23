@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt – Heimat Social Club e.V.</title>
+<meta name="description" content="Kontaktiere den Heimat Social Club e.V. – für Fragen, Beitrittsanfragen und den persönlichen Austausch.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav__logo" href="index.html"><img src="assets/logo.svg" alt="Heimat Social Club e.V."></a>
+    <button class="nav__toggle" aria-label="Menü" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <ul class="nav__links" id="nav">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="mitglied-werden.html">Mitglied werden</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="kontakt.html" class="active">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding:64px 0 48px">
+    <div class="wrap center">
+      <span class="badge">Kontakt</span>
+      <h1>Schreib uns</h1>
+      <p class="lead" style="margin:0 auto">Ob allgemeine Frage oder Beitrittsanfrage – wir freuen uns auf deine Nachricht und melden uns persönlich zurück.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <form class="form" name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/danke.html">
+        <input type="hidden" name="form-name" value="kontakt">
+        <p style="display:none"><label>Bitte leer lassen: <input name="bot-field"></label></p>
+
+        <div class="field">
+          <label for="name">Name *</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email">E-Mail *</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="betreff">Betreff</label>
+          <select id="betreff" name="betreff">
+            <option>Allgemeine Frage</option>
+            <option>Beitrittsanfrage</option>
+            <option>Presse / Behörde</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="nachricht">Nachricht *</label>
+          <textarea id="nachricht" name="nachricht" rows="6" required></textarea>
+        </div>
+        <div class="field field--check">
+          <input id="alter" name="volljaehrig" type="checkbox" required value="ja">
+          <label for="alter">Ich bestätige, dass ich 21 Jahre oder älter bin. *</label>
+        </div>
+        <div class="field field--check">
+          <input id="datenschutz" name="datenschutz" type="checkbox" required value="ja">
+          <label for="datenschutz">Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
+        </div>
+        <button class="btn btn--primary" type="submit">Nachricht senden</button>
+        <p class="hint" style="margin-top:14px">* Pflichtfelder. Wir nutzen deine Daten ausschließlich zur Beantwortung deiner Anfrage.</p>
+      </form>
+
+      <div class="notice" style="max-width:600px;margin:28px auto 0">
+        <strong>Direkt erreichbar:</strong> <em>[Platzhalter]</em> E-Mail: kontakt@heimat-social-club.de · Adresse und Telefon bitte ergänzen, sobald der Verein eingetragen ist.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Heimat Social Club e.V.</h4>
+      <p style="color:#cfe0c0;max-width:34ch">Gemeinschaftlicher Anbauverein (Anbauvereinigung nach dem Konsumcannabisgesetz) für erwachsene Mitglieder in unserer Region.</p>
+      <span class="age-pill">Zutritt ab 21 Jahren</span>
+    </div>
+    <div><h4>Navigation</h4><ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="mitglied-werden.html">Mitglied werden</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul></div>
+    <div><h4>Rechtliches</h4><ul>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+    </ul></div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Heimat Social Club e.V.</span>
+    <span>Kein Verkauf · Keine Werbung · Nur für Mitglieder ab 21</span>
+  </div>
+</footer>
+</body>
+</html>
